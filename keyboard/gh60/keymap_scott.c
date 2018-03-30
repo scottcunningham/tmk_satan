@@ -22,17 +22,17 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] __attribute__ ((section (".key
 const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] PROGMEM = {
 #endif
     [0] = KEYMAP_TKG(
-        ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, BSPC, \
+        GRV, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, BSPC, \
         TAB, Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC,BSLS, \
-        LCTL,A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN,QUOT,     ENT,  \
+        CAPS,A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN,QUOT,     ENT,  \
         LSFT,     Z,   X,   C,   V,   B,   N,   M,   COMM,DOT, SLSH,FN0, LSFT, \
-        LCTL,LGUI,LALT,          SPC,                         LALT,LGUI,LCTL),
+        LCTL,LGUI,LALT,          TRNS,                         LALT,LGUI,LCTL),
     [1] = KEYMAP_TKG(
-        GRV, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, DEL, \
-        TAB, Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   UP  ,RBRC,DEL, \
-        LCTL,MUTE,VOLD,VOLU,   F,   G,   H,   J,HOME,   PGUP,   LEFT,RIGHT,  ENT, \
-        LSFT,  MPLY,MPRV,MNXT,MSTP,   B,   N,   M,   END,PGDN, DOWN,FN0, LSFT, \
-        LCTL,LGUI,LALT,          SPC,                         LALT,LGUI,LCTL),
+        GRV, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, BSPC, \
+        TAB, Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   UP  ,RBRC,BSLS, \
+        CAPS,A,   S,   D,   F,   G,   H,   J,HOME,   PGUP,   LEFT,RIGHT,     ENT,  \
+        LSFT,     Z,   X,   C,   V,   B,   N, END,   COMM,PGDN, DOWN,FN0, LSFT, \
+        LCTL,LGUI,LALT,          TRNS,                         LALT,LGUI,LCTL),
 };
 
 #ifdef KEYMAP_SECTION_ENABLE
